@@ -15,7 +15,7 @@ for row in rock_songs:
 print("songs from 1981: %s \n" % rel_in_81)
 
 # Get top 20 songs by play count
-sorted_songs = sorted(rock_song_rows, key = lambda song: song['PlayCount'], reverse = True)
+sorted_songs = sorted(rock_song_rows, key = lambda song: int( song['PlayCount'] ), reverse = True)
 top_20_songs_by_plays = sorted_songs[0:19]
 
 for song in top_20_songs_by_plays:
